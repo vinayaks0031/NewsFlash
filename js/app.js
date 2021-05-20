@@ -1,7 +1,8 @@
 
 function getNews(name) {
-
-
+    let accordion = document.getElementById("accordion");
+    let loading = ` <img style="width: 100px; height: 100px; margin-left: 40%;" src="/js/Spinner-1s-200px.gif" alt="">`;
+    accordion.innerHTML = loading;
     fetch(`https://bing-news-search1.p.rapidapi.com/news/search?q=${name}&safeSearch=Off&textFormat=Raw&freshness=Day`, {
         "method": "GET",
         "headers": {
@@ -11,7 +12,6 @@ function getNews(name) {
         }
     })
         .then(response => response.json()).then((data) => {
-            let accordion = document.getElementById("accordion");
             let html = "";
             console.log(data);
             let i = 0;

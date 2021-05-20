@@ -13,7 +13,7 @@ function getNews(name) {
     })
         .then(response => response.json()).then((data) => {
             let html = "";
-            console.log(data);
+            // console.log(data);
             let i = 0;
             for (const key in data.value) {
                 html += ` <div class="accordion-item bg-dark my-3">
@@ -24,7 +24,7 @@ function getNews(name) {
                     </button>
                 </h2>
                 <div id="collapse${key}" class="accordion-collapse collapse " aria-labelledby="heading${key}"
-                    data-bs-parent="#accordionExample">
+                    data-bs-parent="#accordion">
                     <div class="accordion-body text-white">
                         ${data.value[key].description} . <a href="${data.value[key].url}" class="btn btn-link px-1 py-1" target="_blank">Read full News Here</a>
                     </div>

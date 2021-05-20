@@ -24,14 +24,37 @@
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+                aria-expanded="false" aria-label="Toggle navigation" style="border: 2px solid rgb(59, 59, 59);">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
     </nav>
-    <div class="container"></div>
+    <div class="container">
+        <h4 class="text-white my-4">Choose Your Fav NewsPaper</h4>
+        <hr class="text-white">
+        <button type="button" id="timesofindia" onclick="getNews(this.id)"
+            class="btn btn-outline-primary my-1 mx-2">Times Of India</button>
+        <button type="button" id="bbc" onclick="getNews(this.id)" class="btn btn-outline-secondary my-1 mx-2">BBC
+            News</button>
+        <button type="button" id="hindustantimes" onclick="getNews(this.id)"
+            class="btn btn-outline-warning my-1 mx-2">Hindustan Times</button>
+        <button type="button" id="technology" onclick="getNews(this.id)"
+            class="btn btn-outline-success my-1 mx-2">Technology</button>
+        <button type="button" id="business" onclick="getNews(this.id)"
+            class="btn btn-outline-danger my-1 mx-2">Business</button>
+        <button type="button" id="health" onclick="getNews(this.id)"
+            class="btn btn-outline-info my-1 mx-2">Health</button>
+        <button type="button" id="sports" onclick="getNews(this.id)"
+            class="btn btn-outline-light my-1 mx-2">sports</button>
+
+        <div id="accordion" class="accordion my-3">
 
 
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
         crossorigin="anonymous"></script>

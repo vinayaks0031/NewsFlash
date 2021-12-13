@@ -20,7 +20,7 @@ function getNews(name) {
                 <h2 class="accordion-header" id="heading${key}">
                     <button class="accordion-button collapsed text-white bg-dark" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapse${key}" aria-expanded="true" aria-controls="collapse${key}">
-                        <b>Breaking News ${++i} </b>:${data.value[key].name}
+                        ${data.value[key].name}
                     </button>
                 </h2>
                 <div id="collapse${key}" class="accordion-collapse collapse " aria-labelledby="heading${key}"
